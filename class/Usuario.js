@@ -24,10 +24,14 @@ class Usuario {
     }
     mostrarDados(){
         console.log (`
+            ${this.boasVindas}
             Nome: ${this.nome}
             Idade: ${this.idade}
             Email: ${this.email}
             Ativo: ${this.ativo}`)
+    }
+    static totalUsuarios() {
+        console.log(`total de usuários criados: ${Usuario.totalUsuarios}`)
     }
 }
 module.exports = Usuario

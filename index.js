@@ -26,7 +26,7 @@ while(continuar){
     const adicionarUsuario = prompt('Deseja adicionar outro usuário? [S/N]: ')
     if(adicionarUsuario === 'S' || adicionarUsuario === 's'){
         user.adicionarUsuario = true 
-    } else if(adicionarUsuario === 'N' || adicionarUsuario === 'n'){
+    } else if(adicionarUsuario === 'S' || adicionarUsuario !== 'S'){
         user.adicionarUsuario = false
     } else{
         console.log('Dado incorreto!')
@@ -41,5 +41,5 @@ while(continuar){
     }
 }
 if(usuarios.length > 0){
-    Usuario.totalUsuarios()
+    Usuario.totalUsuarios
 }
